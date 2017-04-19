@@ -1,0 +1,6 @@
+H:\Project\Showcase\Showcase\bin\Debug\Showcase.exe.config
+H:\Project\Showcase\Showcase\bin\Debug\Showcase.exe
+H:\Project\Showcase\Showcase\bin\Debug\Showcase.pdb
+H:\Project\Showcase\Showcase\obj\Debug\Showcase.csprojResolveAssemblyReference.cache
+H:\Project\Showcase\Showcase\obj\Debug\Showcase.exe
+H:\Project\Showcase\Showcase\obj\Debug\Showcase.pdb
