@@ -9,22 +9,31 @@ namespace Showcase
     class Program
     {
         static string kind;
+        static string kindResponse;
         static string sarcastic;
+        static string sarcasticResponse;
         static string neutral;
+        static string neutralResponse;
         static string aggresive;
+        static string aggresiveResponse;
+        static string answer;
         static bool swer = false;
         /*This is just cause im lazy
           neutral = ("");
           aggresive = ("");
           sarcastic = ("");
-          kind = ("");*/
+          kind = ("");
+          neutralResponse = ("");
+          aggresiveResponse = ("");
+          sarcasticResponse = ("");
+          kindResponse = ("");*/
         static void Answers()
         {
             Console.WriteLine("Press 1 for neutral answer");
             Console.WriteLine("Press 2 for sarcastic answer");
             Console.WriteLine("Press 3 for aggressive answer");
             Console.WriteLine("Press 4 for kind answer");
-            string answer = Console.ReadLine();
+            answer = Console.ReadLine();
             while (swer == false)
             {
                 if (answer == "1")
@@ -54,6 +63,41 @@ namespace Showcase
             }
         }
 
+        static void setfalse()
+        {
+            swer = false;
+        }
+
+        static void returnAnswer()
+        {
+            while (swer == false)
+            {
+                if (answer == "1")
+                {
+                    Console.WriteLine(neutralResponse);
+                    swer = true;
+                }
+                else if (answer == "2")
+                {
+                    Console.WriteLine(sarcasticResponse);
+                    swer = true;
+                }
+                else if (answer == "3")
+                {
+                    Console.WriteLine(aggresiveResponse);
+                    swer = true;
+                }
+                else if (answer == "4")
+                {
+                    Console.WriteLine(kindResponse);
+                    swer = true;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+        }
         static void nextDialogue()
         {
             Console.WriteLine("Press space to enter next dialogue");
@@ -86,6 +130,15 @@ namespace Showcase
             sarcastic = ("Sure was with all the women around if you know what I mean haha.");
             kind = ("They treated me nicely on my way here and its a pleasure to see you again.");
             Answers();
+            setfalse();
+            neutralResponse = ("Well thats good at least.  Come now i have to show you something.");
+            aggresiveResponse = ("I was only asking you don't have to be rude.");
+            sarcasticResponse = ("Your humor never falters now does it hahaha.");
+            kindResponse = ("And its a pleasure to finally see you again.");
+            returnAnswer();
+            setfalse();
+            Console.ReadKey();
+            clear();
 
         }
     }
