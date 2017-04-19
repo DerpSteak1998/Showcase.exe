@@ -18,6 +18,29 @@ namespace Showcase
           aggresive = ("");
           sarcastic = ("");
           kind = ("");*/
+
+        static void Battle()
+        {
+            //Console.WriteLine("You encountered a" + fighterName + ". Do you want to try to run? Y/N");
+            string run = Console.ReadLine();
+            
+            if (run == "y" || run == "Y")
+            {
+                //RNG math and stuff to see if you get away
+            }
+
+            else
+            {
+
+                Console.WriteLine("You decided not to run. Let the battle begin!");
+            }
+
+            Console.WriteLine("Select your action: ");
+            Console.WriteLine("");
+            Console.WriteLine("1: Attack");
+            Console.WriteLine("2: Defend");
+            Console.WriteLine("3: Stun Attack - Takes 5 stamina");
+        }
         static void Answers()
         {
             Console.WriteLine("Press 1 for neutral answer");
